@@ -2,7 +2,7 @@ module.exports = {
 	app: [
 		{
 			name: 'inventory-management',
-			script: 'npm',
+			script: '/usr/bin/npm',
 			args: 'run dev',
 			interpreter: 'none',
 			env: {
