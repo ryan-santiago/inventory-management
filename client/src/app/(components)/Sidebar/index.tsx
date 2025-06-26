@@ -12,6 +12,7 @@ import {
 	SlidersHorizontal,
 	CircleDollarSign,
 } from 'lucide-react'
+import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
@@ -78,7 +79,13 @@ const Sidebar = () => {
 					isSidebarCollapsed ? 'px-5' : 'px-8'
 				}`}
 			>
-				<div className="">logo</div>
+				<Image
+					src="https://s3-inventorymanagement-testryan.s3.ap-southeast-1.amazonaws.com/logo.jpg"
+					alt="edstock-logo"
+					width={27}
+					height={27}
+					className="rounded-full w-8"
+				/>
 				<h1
 					className={`${
 						isSidebarCollapsed ? 'hidden' : 'block'
